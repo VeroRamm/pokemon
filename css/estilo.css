@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: linear-gradient(to left bottom, #135bc7, #007fdf, #009fea, #00beec, #12daeb);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+header{
+    text-align: center;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+.pokemon-imagen{
+    margin-left: 20%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    overflow: hidden;
+    
+}
+.carousel-inner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.carousel-item{
+    text-align: center;
+  transition:all 1s ease;
+  -webkit-transition:all ;
+  -moz-transition:all ;
+  -ms-transition:all ;
+  -o-transition:all ;
+  padding: 50px;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+  -webkit-border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+  -moz-border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+  -ms-border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+  -o-border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+}
+.carousel-item h2 h4{
+    font-size: 1.5em;
+    text-shadow: 2px 2px #131212; 
+    color: rgb(17, 16, 16);
+    font-weight: bold;
+    
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: transparent;
+    border: none;
+    margin: 30%;
+   
+}
+.carousel-control-prev{
+    left: -150px;
+}
+.carousel-control-next{
+    right: -150px;
+}
