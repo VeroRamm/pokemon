@@ -1,45 +1,41 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
+   
 }
 body{
-    background-image: linear-gradient(to left bottom, #135bc7, #007fdf, #009fea, #00beec, #12daeb);
-    background-size: cover;
-    background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 10px auto;
+    background-color: rgb(119, 189, 247);
 }
 header{
     text-align: center;
+    background-image: linear-gradient(to left bottom, #135bc7, #007fdf, #009fea, #00beec, #12daeb);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
 }
 main{
     width: 100%;
+    height: 100%; 
     display: flex;
     justify-content: center;
     margin-top: 40px;
     
 }
-.pokemon-imagen{
-    margin-left: 20%;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    overflow: hidden;
-    
-}
+
 .carousel-inner{
-    background-repeat: no-repeat;
+    border: #009fea solid 1px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left bottom, #135bc7, #007fdf, #009fea, #00beec, #12daeb);
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
 }
@@ -50,21 +46,34 @@ main{
   -moz-transition:all ;
   -ms-transition:all ;
   -o-transition:all ;
-  padding: 50px;
+  padding: 30px;
   border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
   -webkit-border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
   -moz-border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
   -ms-border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
   -o-border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
 }
-.carousel-item h2 h4{
-    font-size: 1.5em;
-    text-shadow: 2px 2px #131212; 
+.nombre{
+    font-size: 40px;
+    text-shadow: 2px 1px #131212;
+    color: rgb(17, 16, 16);
+    font-weight: bold;
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    margin: 10px;
+}
+.habilidades{
+    font-size: 30px; 
     color: rgb(17, 16, 16);
     font-weight: bold;
     
+    
 }
-
 .carousel-control-prev,
 .carousel-control-next{
     background-color: transparent;

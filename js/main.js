@@ -21,7 +21,22 @@ const pokemon = new Vue({
     }
 });
 
+const buscar = document.querySelector('#buscar');
+const boton = document.querySelector('#boton');
 
+const filtrar = () => {
+       // console.log(buscar.value);
+       const texto = buscar.value.toLowerCase();
+         const lista = document.querySelectorAll('li');
+            lista.forEach(element => {
+                const textoLi = element.textContent.toLowerCase();
+                if(textoLi.includes(texto)){
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+}
 
 
 

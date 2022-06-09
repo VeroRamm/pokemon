@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <img src="./css/imagenes/Pokemon-Letra.jpg" alt="" width="400px">
+        <img src="./css/imagenes/Pokemon-Letra.jpg" alt="" width="300px">
     </header>
     <main>
       <!--  <div class="carrusel">
@@ -36,11 +36,13 @@
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner" >
                     <div v-for="(poke,indice) in dato" :class="indice==0? 'active':''" class="carousel-item">
-                        <h2>{{poke.name}}</h2>
-                        <h4>{{poke.type[0]}}</h4> <h4>{{poke.type[1]}}</h4>
-                        <img :src="poke.img" :alt="poke.name">
+                        <img :src="poke.img" :alt="poke.name" width="200px">
+                        <h2 class="nombre">{{poke.name}}</h2>
+                        <h4 class="habilidades">Tipo: <br>{{poke.type[0]}}</h4> <h4 class="habilidades">{{poke.type[1]}}</h4>
+                        <h5>Altura: {{poke.height}}</h5>
+                        <h5>Peso: {{poke.weight}}</h5>
+                        <h6>Debilidades: {{poke.weaknesses[0]}}, {{poke.weaknesses[1]}}, {{poke.weaknesses[2]}}, {{poke.weaknesses[3]}}</h6>
                     </div>
-                    <img src="./css/imagenes/pokebola.png"  class="pokemon-imagen" alt="">
                 </div>
 
                 <!-- Left and right controls/icons -->
